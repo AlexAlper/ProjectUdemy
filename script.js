@@ -10,12 +10,11 @@ function start() {
      }
 }
 
-start();
+//start();
 
 let appData = {
 	budget: money,
      expenses: {},
-     optionalExpenses: {},
 	optionalExpenses: {},
 	income: [],
 	timeData: time,
@@ -52,7 +51,7 @@ let appData = {
      },
      detectLevel: function() {
           if(appData.moneyPerDay < 100) {
-               console.log('Минимальный')
+               console.log('Минимальный');
           } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 1000){
                console.log('Normal');
           } else if (appData.moneyPerDay > 1000){
@@ -89,7 +88,6 @@ let appData = {
      }
 };
 
-appData.allAppData();
 
 
 
