@@ -24,8 +24,13 @@ let startBtn = document.getElementById("start"),
 
     let money, time;
 
+    expensesBtn.disabled = true;
 
     startBtn.addEventListener('click', function(){
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         time = prompt ("Введите дату в формате YYYY-MM-DD", "");
         money = +prompt ("Ваш бюджет на месяц?", "");
         
@@ -42,6 +47,10 @@ let startBtn = document.getElementById("start"),
     });
 
     expensesBtn.addEventListener('click', function(){
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
         let sum = 0;
         for (let i = 0; i < expensesItem.length; i++) {
             let a = expensesItem[i].value,
@@ -63,15 +72,27 @@ let startBtn = document.getElementById("start"),
     });
 
     optionalExpensesBtn.addEventListener('click', function(){
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
         for (let i = 0; i <= optionalExpensesItem.length; i++) {
 
             let questionOptExpenses = optionalExpensesItem[i].value;
             appData.optionalExpenses[i] = questionOptExpenses;
             optionalExpensesValue.textContent += appData.optionalExpenses[i] + ' ';
+<<<<<<< Updated upstream
         }
     });
 
     countBtn.addEventListener('click', function(){
+=======
+        }}
+    );
+
+    countBtn.addEventListener('click', function(){
+   
+>>>>>>> Stashed changes
         if(appData.budget != undefined){
             appData.moneyPerDay = (appData.budget / 30).toFixed();
             dayBudgetValue.textContent = appData.moneyPerDay;
@@ -92,12 +113,20 @@ let startBtn = document.getElementById("start"),
     });
 
     incomeItem.addEventListener('input', function(){
+<<<<<<< Updated upstream
+=======
+   
+>>>>>>> Stashed changes
         let items = incomeItem.value;
         appData.income = items.split(", ");
         incomeValue.textContent = appData.income;
     });
 
     checkSavings.addEventListener('click', function(){
+<<<<<<< Updated upstream
+=======
+     
+>>>>>>> Stashed changes
         if(appData.savings == true){
             appData.savings = false;
         } else {
@@ -106,6 +135,10 @@ let startBtn = document.getElementById("start"),
     });
 
     sumValue.addEventListener('input', function(){
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
         if(appData.savings == true){
             let sum = +sumValue.value,
                 percent = +percentValue.value;
@@ -119,6 +152,10 @@ let startBtn = document.getElementById("start"),
     });
 
     percentValue.addEventListener('input', function(){
+<<<<<<< Updated upstream
+=======
+       
+>>>>>>> Stashed changes
         if(appData.savings == true){
             let sum = +sumValue.value,
             percent = +percentValue.value;
@@ -137,7 +174,11 @@ let startBtn = document.getElementById("start"),
         expenses: {},
         optionalExpenses: {},
         income: [],
+<<<<<<< Updated upstream
         savings: false,
+=======
+        savings: false
+>>>>>>> Stashed changes
     
     };
     
